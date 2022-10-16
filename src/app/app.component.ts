@@ -8,16 +8,18 @@ import { CheckImagesComponent } from './components/check-images/check-images.com
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
+  hide: boolean = false;
   constructor(public dialog: MatDialog){
 
   }
 
   openModal() {
+    this.hide = true;
     this.dialog
       .open(CheckImagesComponent)
       .afterClosed()
       .subscribe((result) => {
+        this.hide = false;
       });
   }
 }
