@@ -97,11 +97,24 @@ export class CheckImagesComponent implements OnInit, AfterViewInit {
   }
 
   private showAnswers(){
-    console.log('si')
     const imagesHtml =  document.querySelector('.row');
     if(imagesHtml){
       const result = this.answers.every(a => a.isCorrect);
       imagesHtml.classList.add(result ? 'success' : 'danger');
+    }
+    const deers = document.querySelectorAll('.deers');
+    deers.forEach(d => {
+      d.classList.add('disabled-deers');
+    })
+  }
+
+  restart(){
+    this.answers = [];
+    this.indexCorrects = [];
+    this.reset();
+    const imagesHtml =  document.querySelector('.row');
+    if(imagesHtml){
+      imagesHtml.classList.remove(...['success', 'danger']);
     }
   }
 

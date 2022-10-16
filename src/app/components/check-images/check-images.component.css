@@ -32,9 +32,28 @@ img {
 }
 
 .danger{
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #dc3545 !important;
 }
 
 .success{
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: #198754 !important;
+}
+
+.disabled-deers{
+    cursor: default !important;
+    border-style: none !important;
+} 
+
+.restart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-restart{
+    cursor: pointer;
 }

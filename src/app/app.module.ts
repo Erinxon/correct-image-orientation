@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CheckImagesComponent } from './components/check-images/check-images.component';
 import { MatDividerModule } from "@angular/material/divider";
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MatDividerModule } from "@angular/material/divider";
     BrowserModule,
     MatDialogModule,
     BrowserAnimationsModule,
-    MatDividerModule
+    MatDividerModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

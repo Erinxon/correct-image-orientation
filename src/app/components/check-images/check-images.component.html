@@ -1,7 +1,10 @@
-
-    <label class="l-title text-center">Toque la imagen que está en la orientación correcta</label>
-    <div class="row" id="content">
-        <div class="col-md-4 deers " *ngFor="let image of images">
-            <img [src]="image.path" [id]="image.id" class="img-fluid" alt="..." (click)="checkimage(image)">
-        </div>
+<label class="l-title text-center">Toque la imagen que está en la orientación correcta</label>
+<div class="row" id="content disable">
+    <div class="col-md-4 deers" *ngFor="let image of images">
+        <img [src]="image.path" [id]="image.id" class="img-fluid" (click)="checkimage(image)">
     </div>
+</div>
+
+<div class="restart mt-3">
+    <mat-icon aria-hidden="false" (click)="restart()" aria-label="Reiniciar" fontIcon="cached" class="icon-restart"></mat-icon>
+</div>
