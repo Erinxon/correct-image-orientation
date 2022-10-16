@@ -78,9 +78,6 @@ export class CheckImagesComponent implements OnInit, AfterViewInit {
     let randomNumbers = [randomNumberPositive, randomNumberNegative];
     let randomIndex = Math.floor((Math.random() * (1 - 0 + 1)) + 0);
     let randomNumber = randomNumbers[randomIndex];
-    if(randomNumber === 180){
-      randomNumber = this.getRamdonNumber
-    }
     return randomNumber;
   }
 
