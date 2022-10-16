@@ -51,6 +51,10 @@ export class CheckImagesComponent implements OnInit, AfterViewInit {
         `rotate(${images[index]?.orientation}deg)`
       )
     });
+    this.setImageCorrect(randomIndex);
+  }
+
+  private setImageCorrect(randomIndex: number){
     const imagesorientationCorrect = this.images.find((image, index) => index === randomIndex);
     imagesorientationCorrect.isCorrect = true;
     imagesorientationCorrect.orientation = null;
