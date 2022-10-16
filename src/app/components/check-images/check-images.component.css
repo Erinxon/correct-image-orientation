@@ -32,14 +32,16 @@ img {
 }
 
 .danger{
-    padding-top: 5px;
+    padding-top: 9px;
     padding-bottom: 5px;
+    border-radius: 6px;
     background-color: #dc3545 !important;
 }
 
 .success{
     padding-top: 5px;
     padding-bottom: 5px;
+    border-radius: 6px;
     background-color: #198754 !important;
 }
 
