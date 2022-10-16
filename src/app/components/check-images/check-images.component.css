@@ -1,0 +1,40 @@
+.row{
+    width: 321.33px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    margin: 10px 0 0 0 !important;
+}
+
+.l-title{
+    max-width: 321.33px;
+}
+
+.deers{
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    width: 107.11px;
+    height: 107.11px;
+    top: 0px;
+    left: 0px;
+}
+
+.deers:hover {
+    border-style: dotted;
+    cursor: pointer;
+}
+
+img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.danger{
+    background-color: #dc3545 !important;
+}
+
+.success{
+    background-color: #198754 !important;
+}

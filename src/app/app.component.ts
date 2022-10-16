@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { CheckImagesComponent } from './components/check-images/check-images.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'correct-orientation';
+
+  constructor(public dialog: MatDialog){
+
+  }
+
+  openModal() {
+    this.dialog
+      .open(CheckImagesComponent)
+      .afterClosed()
+      .subscribe((result) => {
+      });
+  }
 }
