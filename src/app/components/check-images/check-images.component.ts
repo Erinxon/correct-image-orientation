@@ -85,12 +85,14 @@ export class CheckImagesComponent implements OnInit, AfterViewInit {
   }
 
   checkimage(imageCheck: ImageCheck){
-    if(this.indexCorrects.length === this.images.length){
+    this.answers.push(imageCheck)
+    if(this.answers.length === this.images.length){
       this.showAnswers();
       return;
     }
-    this.answers.push(imageCheck)
-    this.reset();
+    if(this.indexCorrects.length !== this.images.length){
+      this.reset();
+    }
   }
 
   private reset(){
