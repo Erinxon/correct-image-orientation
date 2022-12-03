@@ -1,7 +1,7 @@
 <label class="l-title text-center">Toque la imagen que está en la orientación correcta</label>
 <div class="row" id="content disable">
-    <div class="col-md-4 deers" *ngFor="let image of images">
-        <img [src]="image.path" [id]="image.id" class="img-fluid" (click)="checkimage(image)">
+    <div class="col-md-4 deers" *ngFor="let image of images" (click)="checkimage(image)">
+        <img [src]="image.path" [id]="image.id" class="img-fluid">
     </div>
 </div>
 
